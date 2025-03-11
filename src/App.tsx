@@ -1,8 +1,9 @@
 import React from "react";
-import EventsPage from "./pages/EventsPage";
+// import EventsPage from "./pages/Events/EventsPage";
+import MainPage from "./pages/MainPage";
 
 const App: React.FC = () => {
-  return <EventsPage />;
+  return <MainPage />;
 };
 
 export default App;

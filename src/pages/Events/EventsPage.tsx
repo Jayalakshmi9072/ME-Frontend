@@ -1,8 +1,8 @@
 import styles from "./EventsPage.module.css";
 import React from "react";
-import Sidebar from "../Components/Sidebar/Sidebar";
-import EventCard from "../Components/EventCard/EventCard";
-import { Event } from "../types/Event";
+import Sidebar from "../../Components/Sidebar/Sidebar";
+import EventCard from "../../Components/EventCard/EventCard";
+import { Event } from "../../types/Event";
 
 
 const events: Event[] = [
@@ -41,22 +41,19 @@ const events: Event[] = [
 const EventsPage: React.FC = () => {
   return (
     <div className={styles.container}>
-      <div  className={styles.sidebar}>
-      <Sidebar />
-      </div>
       <div className={styles.content}>
-        <h2>Events</h2>
-        <div className={styles.filterSort}>
-          <button>Filter</button>
-          <button>Sort</button>
-        </div>
-        <div className={styles.eventsContainer}>
-          {events.map((event) => (
-            <EventCard key={event.id} event={event} />
-          ))}
-        </div>
-        </div>
-        </div>
+          <h2>Events</h2>
+          <div className={styles.filterSort}>
+            <button>Filter</button>
+            <button>Sort</button>
+          </div>
+          <div className={styles.eventsContainer}>
+            {events.map((event) => (
+              <EventCard key={event.id} event={event} />
+            ))}
+          </div>
+      </div>
+    </div>
     
   );
 };
