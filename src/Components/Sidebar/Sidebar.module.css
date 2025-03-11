@@ -1,0 +1,104 @@
+.sidebar {
+  width: 150px;
+  background-color: #b58325;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  z-index: 1000;
+  transition: width 0.3s ease-in-out; 
+}
+
+.content {
+  margin-left: 150px; 
+  flex: 1;
+  padding: 20px;
+}
+
+.logo img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.navLinks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.navLinks li {
+  width: 100%;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.icon {
+  font-size: 40px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.logout {
+  margin-top: auto;
+  padding-bottom: 15px;
+}
+
+.logout a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.logout a:hover {
+  color: white;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .sidebar {
+    width: 100px;
+    height:100%;
+  }
+  .content {
+    margin-left: 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 80px; 
+    height:100%;
+  }
+  .content {
+    margin-left: 80px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sidebar {
+    width: 80px;
+    height:100%;
+  }
+  .content {
+    margin-left: 60px;
+  }
+  .icon {
+    font-size: 30px;
+  }
+  .navLinks a {
+    font-size: 12px; 
+  }
+}
