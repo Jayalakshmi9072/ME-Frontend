@@ -26,12 +26,17 @@ h2 {
 
 
 .filterSort {
-  position: absolute;
-  top: 30px;
-  right: 70px;
+  position: sticky;  /* ✅ Sticky for fixed positioning */
+  top: 0;
   display: flex;
   gap: 12px;
+  justify-content: flex-end; /* ✅ Aligns buttons to the right */
+  background-color: white;  /* Matches page background */
+  padding: 10px 20px; /* Added padding for spacing */
+  z-index: 10; /* Ensures buttons stay above content */
+  border-bottom: 2px solid #ddd; /* Visual separation */
 }
+
 
 .filterSort button {
   background-color:#b58325; 

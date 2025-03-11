@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import styles from "./MainPage.module.css";
 import Sidebar from "../Components/Sidebar/Sidebar";
 // import Dashboard from "../Components/Dashboard/Dashboard";
-// import Members from "../Components/Members/Members";
+// import MembersPage from "./Events/MembersPage";
 import EventsPage from "./Events/EventsPage";
 // import Profile from "../Components/Profile/Profile";
 // import Feedback from "../Components/Feedback/Feedback";
 
 const componentMapping: Record<string, React.ReactNode> = {
 //   Dashboard: <Dashboard />,
-//   Members: <Members />,
+  // Members: <MembersPage />,
   Events: <EventsPage />,
 //   Profile: <Profile />,
 //   Feedback: <Feedback />,
